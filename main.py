@@ -9,7 +9,7 @@ def add_to_txt():
         with open(eingabe_dateipfad, 'r') as eingabe_datei, open(ausgabe_dateipfad, 'w') as ausgabe_datei:
             for zeile in eingabe_datei:
                 # Zeile modifizieren und in Ausgabe-Datei schreiben
-                modifizierte_zeile = "SOCKS5\t" + zeile.strip() + '\n'
+                modifizierte_zeile = "socks5\t" + zeile.strip() + '\n'
                 ausgabe_datei.write(modifizierte_zeile)
 
         print("Die Datei wurde erfolgreich modifiziert und gespeichert.")
